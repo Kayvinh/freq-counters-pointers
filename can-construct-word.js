@@ -1,3 +1,4 @@
+"use strict";
 // add whatever parameters you deem necessary & write doc comment
 function canConstructWord(word, letters) {
   // check for length of letters, if word longer than letters, is false
@@ -18,15 +19,6 @@ function canConstructWord(word, letters) {
   //return true
   return true;
 }
-
-canConstructWord('aa', 'abc');
-// false -- can't build "aa" with only 1 "a"
-
-canConstructWord('abc', 'dcba');
-  // true -- can build "abc" with letters "abcd"
-
-canConstructWord('aabb', 'bcabad');
-  // true -- can build "aabbcc" with those letters
 
 function getFreqCounter(items) {
   let freqs = {};
