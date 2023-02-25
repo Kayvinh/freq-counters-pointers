@@ -3,6 +3,7 @@
 /** Looks through an array to find if there is a pair of numbers whose average
  * matches a target number. Returns a boolean.
  */
+// TODO: missing sorted piece in docstring
 function averagePair(nums, targetAvg) {
   if (nums.length === 0) return false;
   let leftPointer = 0;
@@ -15,6 +16,7 @@ function averagePair(nums, targetAvg) {
      typeof nums[rightPointer] !== "number") {
        return false;
     }
+    // TODO: NaN not accounted for
 
     let avg = (nums[leftPointer] + nums[rightPointer]) / 2;
 
